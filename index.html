@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="zh-CN" class="scroll-smooth">
 <head>
@@ -275,12 +276,12 @@
                         专为直播设计的低延迟节点。原生独立 IP，告别卡顿。
                     </p>
                     <ul class="space-y-3 mb-8 text-sm text-gray-400">
-                        <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i> 初级版 ¥400/月</li>
-                        <li class="flex items-center gap-2"><i data-lucide="rocket" class="w-4 h-4 text-purple-500"></i> 高级版 ¥820/月</li>
+                        <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i> 月付版 ¥300/月</li>
+                        <li class="flex items-center gap-2"><i data-lucide="rocket" class="w-4 h-4 text-purple-500"></i> 包年版 ¥1,800/年</li>
                     </ul>
                 </div>
                 <div class="flex items-center justify-between mt-auto">
-                    <span class="text-xl font-semibold">¥400 <span class="text-sm text-gray-500">/ 起</span></span>
+                    <span class="text-xl font-semibold">¥300 <span class="text-sm text-gray-500">/ 起</span></span>
                     <button onclick="openPaymentModal('network')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
                 </div>
             </div>
@@ -305,8 +306,37 @@
                 </div>
             </div>
 
-            <!-- Card 4: Ads -->
-            <div class="bento-card col-span-1 lg:col-span-2 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#1d1d1f] to-[#161617] reveal" style="transition-delay: 0.3s">
+            <!-- Card 4: Facebook -->
+            <div class="bento-card p-8 md:p-10 flex flex-col justify-between relative group reveal" style="transition-delay: 0.3s">
+                <div class="z-10">
+                    <i data-lucide="facebook" class="w-12 h-12 text-blue-600 mb-6"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Facebook 账号与开户</h3>
+                    <p class="text-gray-400 text-base leading-relaxed mb-4">
+                        专业提供稳定可靠的 Meta 资产，确保投放畅通无阻。
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
+                            <span class="text-gray-400">FB 普通账号</span>
+                            <span class="text-white">¥150</span>
+                        </div>
+                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
+                            <span class="text-gray-400">FB 公共主页</span>
+                            <span class="text-white">¥1,200</span>
+                        </div>
+                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
+                            <span class="text-gray-400">BM 企业号开户</span>
+                            <span class="text-white">¥6,500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mt-8">
+                    <span class="text-xl font-semibold">¥150 <span class="text-sm text-gray-500">/ 起</span></span>
+                    <button onclick="openPaymentModal('essentials')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
+                </div>
+            </div>
+
+            <!-- Card 5: Ads -->
+            <div class="bento-card col-span-1 lg:col-span-2 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#1d1d1f] to-[#161617] reveal" style="transition-delay: 0.4s">
                 <div class="max-w-md">
                     <span class="text-gradient-gold font-semibold tracking-wide text-sm uppercase mb-2 block">核心业务</span>
                     <h3 class="text-3xl font-semibold text-white mb-4">广告代投流量增长</h3>
@@ -323,39 +353,6 @@
                     <div class="text-4xl font-semibold text-white mb-1">10%</div>
                     <div class="text-sm text-gray-500 mb-6">广告消耗服务费</div>
                     <button onclick="openPaymentModal('ads')" class="btn-apple px-8 py-3 text-sm font-medium">联系购买</button>
-                </div>
-            </div>
-
-            <!-- Card 5: Essentials -->
-            <div class="bento-card p-8 md:p-10 flex flex-col justify-between relative group reveal" style="transition-delay: 0.4s">
-                <div class="z-10">
-                    <i data-lucide="briefcase" class="w-12 h-12 text-orange-500 mb-6"></i>
-                    <h3 class="text-2xl font-semibold text-white mb-3">出海基建</h3>
-                    <p class="text-gray-400 text-base leading-relaxed mb-4">
-                        补齐出海拼图的最后一块。
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">海外邮箱</span>
-                            <span class="text-white">¥50</span>
-                        </div>
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">美区 Apple ID</span>
-                            <span class="text-white">¥100</span>
-                        </div>
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">海外手机号</span>
-                            <span class="text-white">¥400</span>
-                        </div>
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">海外收款账户开户</span>
-                            <span class="text-white">¥4,000</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center justify-between mt-8">
-                    <span class="text-xl font-semibold">¥50 <span class="text-sm text-gray-500">/ 起</span></span>
-                    <button onclick="openPaymentModal('essentials')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
                 </div>
             </div>
 
@@ -564,8 +561,10 @@
             // Close others
             const others = ['usdt'].filter(item => item !== id);
             others.forEach(other => {
-                document.getElementById('detail-' + other).classList.add('hidden');
-                document.getElementById('arrow-' + other).style.transform = 'rotate(0deg)';
+                if(document.getElementById('detail-' + other)) {
+                     document.getElementById('detail-' + other).classList.add('hidden');
+                     document.getElementById('arrow-' + other).style.transform = 'rotate(0deg)';
+                }
             });
 
             // Toggle current
@@ -590,3 +589,6 @@
     </script>
 </body>
 </html>
+
+
+```
