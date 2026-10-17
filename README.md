@@ -34,6 +34,15 @@ python scripts\verify.py
 > 本机没有全局 python/node，用的是 DSH 自带运行时：
 > `C:\Users\xx\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\{python\python.exe,node\bin\node.exe}`
 
+## 线上体检（每周跑一次）
+
+`powershell
+python scripts\audit_live.py
+`
+
+直接检查 https://xuanlanch.dpdns.org 的首页、og 分享图、robots、sitemap、
+全部站内资源、第三方依赖、传输体积与缓存头。全部通过会输出 PASS，退出码 0。
+
 ## 本地预览
 
 ```powershell
