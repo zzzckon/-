@@ -1,0 +1,7 @@
+/* Tailwind 源文件：构建产物是 assets/css/site.css（已压缩）。
+   改完 HTML 后重新构建：
+     tailwindcss.exe -c tailwind.config.js -i src/input.css -o assets/css/site.css --minify
+   这样页面不再需要在浏览器里现场编译 Tailwind。 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

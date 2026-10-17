@@ -1,0 +1,12 @@
+{
+  "name": "xuanlanch-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "玄澜跨境官网（Vercel 静态站）",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/site.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
