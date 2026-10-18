@@ -107,8 +107,8 @@ def main() -> int:
         record(False, "robots.txt 可访问", str(exc))
 
     try:
-        st, _, sraw = fetch(BASE + "/sitemap.xml")
-        sitemap = sraw.decode("utf-8", "replace")
+        st, shdrs, sraw = fetch(BASE + "/sitemap.xml")
+        sitemap = decode(sraw, shdrs).decode("utf-8", "replace")
         locs = re.findall(r"<loc>([^<]+)</loc>", sitemap)
         record(st == 200 and bool(locs), "sitemap.xml 正常", f"{len(locs)} 个 URL")
         for loc in locs:
@@ -162,7 +162,33 @@ def main() -> int:
         except urllib.error.URLError as exc:
             record(False, "CSS 可访问", str(exc))
 
-    # 7. 转化入口提示（t.me 在大陆通常不可达，只报告不判失败）
+    # 7. 商品目录（静态化可抓取检查）
+    print("\n商品目录")
+    try:
+        stp, chdrs, praw = fetch(BASE + "/products/")
+        prod_html = decode(praw, chdrs).decode("utf-8", "replace")
+        cards = len(re.findall(r'class=\"?card\"?', prod_html))
+        record(stp == 200 and cards > 0, "商品目录可访问", f"{cards} 个商品卡片")
+    except urllib.error.URLError as exc:
+        record(False, "商品目录可访问", str(exc))
+    try:
+        stpr, phdrs, prraw = fetch(BASE + "/product/fb-enterprise-eco-1p1/")
+        pr = decode(prraw, phdrs).decode("utf-8", "replace")
+        body = re.sub(r"<script.*?</script>", "", pr, flags=re.S)
+        body = re.sub(r"<style.*?</style>", "", body, flags=re.S)
+        body = re.sub(r"<[^>]+>", " ", body)
+        body = re.sub(r"\s+", " ", body).strip()
+        record(
+            stpr == 200 and len(body) > 300,
+            "商品详情页无 JS 可见正文 > 300 字符",
+            f"{len(body)} 字符",
+        )
+        record(re.search(r'"@type"\s*:\s*"Product"', pr) is not None,
+               "商品页含 Product 结构化数据")
+    except urllib.error.URLError as exc:
+        record(False, "商品详情页可访问", str(exc))
+
+    # 8. 转化入口提示（t.me 在大陆通常不可达，只报告不判失败）
     print("\n转化入口")
     has_qq = "956878659" in html
     record(has_qq, "页面上有可复制的 QQ 号")
