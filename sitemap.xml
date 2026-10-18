@@ -31,6 +31,18 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-enterprise-eco-3p3/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-enterprise-eco-5p4/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://xuanlanch.dpdns.org/product/fb-enterprise-game-1p1/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
@@ -43,7 +55,19 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-enterprise-game-5p4/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://xuanlanch.dpdns.org/product/fb-personal-farmed-us/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-personal-farmed-us-large/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -55,19 +79,37 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-page-asset/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/product/fb-bm-opening/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://xuanlanch.dpdns.org/category/tiktok/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://xuanlanch.dpdns.org/product/tiktok-shop-sg/</loc>
+        <loc>https://xuanlanch.dpdns.org/product/tiktok-shop-open/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://xuanlanch.dpdns.org/product/tiktok-shop-my/</loc>
+        <loc>https://xuanlanch.dpdns.org/product/tiktok-account-ph/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/product/tiktok-account-th/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -110,6 +152,12 @@
     </url>
     <url>
         <loc>https://xuanlanch.dpdns.org/product/svc-ads-managed/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/product/svc-fb-personal/</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>

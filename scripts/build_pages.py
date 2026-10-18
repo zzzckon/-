@@ -199,6 +199,8 @@ def shell(title, desc, canonical, body, jsonld=None, og_image="/assets/img/og-co
 
 
 def stock_label(stock):
+    if stock is None:
+        return "现货可询", "stock"
     if stock <= 0:
         return "缺货", "stock"
     if stock <= 5:
@@ -215,7 +217,7 @@ def badge_html(tags):
 
 
 def card_html(item, cat):
-    label, cls = stock_label(item["stock"])
+    label, cls = stock_label(item.get("stock"))
     was = f'<span class="was">${money(item["was"])}</span>' if item.get("was") else ""
     if item.get("price") == 0 and item.get("priceNote"):
         price = f'<span class="price" style="font-size:15px">{esc(item["priceNote"])}</span>'
@@ -344,7 +346,7 @@ def build_category(cat):
 
 
 def build_product(item, cat):
-    label, cls = stock_label(item["stock"])
+    label, cls = stock_label(item.get("stock"))
     specs = "\n".join(
         f'        <tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>'
         for k, v in item.get("specs", {}).items()
@@ -408,7 +410,7 @@ def build_product(item, cat):
     if offer_price is not None:
         avail = (
             "https://schema.org/InStock"
-            if item["stock"] > 0
+            if item.get("stock", 1) > 0
             else "https://schema.org/OutOfStock"
         )
         jsonld["offers"] = {
@@ -435,8 +437,8 @@ def build_product(item, cat):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         shell(
-            f"{item['name']} 价格与库存 | {YE}",
-            f"{item['summary']} 现价 ${money(item['price'])}，库存 {item['stock']}。",
+            f"{item['name']} 价格 | {YE}",
+            f"{item['summary']} 现价 ${money(item['price'])}。",
             f"{SITE}/product/{item['id']}/",
             body,
             jsonld,
