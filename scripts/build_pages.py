@@ -254,7 +254,7 @@ def build_products_index(data):
           <span>✔ 现货 {sum(len(c["items"]) for c in data["categories"])} 款</span>
           <span>✔ 30 分钟交付</span>
           <span>✔ 7 天售后</span>
-          <span>✔ 支持开票</span>
+          <span>✔ 付款方式灵活</span>
         </div>
         <div class="catnav">{catnav}</div>
       </header>
@@ -391,7 +391,7 @@ def build_product(item, cat):
           <ul class="plain">
             <li>支付宝 / 微信</li>
             <li>USDT（Arbitrum One）</li>
-            <li>对公转账（可开票）</li>
+            <li>对公转账</li>
           </ul>
         </aside>
       </div>
