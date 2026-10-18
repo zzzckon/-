@@ -115,6 +115,30 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://xuanlanch.dpdns.org/wiki/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/wiki/fb-account-types/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/wiki/bm-guide/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://xuanlanch.dpdns.org/wiki/tiktok-shop-guide/</loc>
+        <lastmod>2026-10-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://xuanlanch.dpdns.org/privacy.html</loc>
         <lastmod>2026-10-18</lastmod>
         <changefreq>yearly</changefreq>

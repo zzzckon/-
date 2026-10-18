@@ -304,7 +304,7 @@
             </a>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#services" class="btn-apple px-8 py-3 text-base font-medium flex items-center justify-center gap-2">
-                    浏览服务套餐 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                    了解我们做什么 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
                 </a>
                 <a href="#contact" class="text-blue-400 hover:text-blue-300 px-8 py-3 text-base font-medium flex items-center justify-center gap-2 transition">
                     预约咨询 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
@@ -351,134 +351,69 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- 内容矩阵：首页不摆价目表，价格统一在 /products/ -->
     <section id="services" class="py-32 px-6 max-w-[1400px] mx-auto">
         <div class="mb-16 reveal">
-            <h2 class="text-4xl md:text-6xl font-semibold tracking-tight mb-4">全链路解决方案。</h2>
-            <p class="text-xl text-gray-400">从建站到推广，每一步都为您精心设计。</p>
-            <a href="/products/" class="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-sm font-medium mt-4 transition">
-                查看全部商品与实时库存 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            <h2 class="text-4xl md:text-6xl font-semibold tracking-tight mb-4">我们做什么。</h2>
+            <p class="text-xl text-gray-400 max-w-2xl">三条业务线：广告资产交付、独立站搭建、广告代投。
+            具体型号与价格在商品页，先看下面的知识库了解怎么选。</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            <a href="/category/facebook/" class="bento-card p-8 md:p-10 reveal group block">
+                <svg class="w-11 h-11 text-blue-600 mb-6" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+                <h3 class="text-2xl font-semibold text-white mb-3 group-hover:text-blue-400 transition">广告资产交付</h3>
+                <p class="text-gray-400 text-base leading-relaxed mb-6">Facebook 个人号、企业广告账户、公共主页与 BM 授权，覆盖冷启动到规模化投放。</p>
+                <span class="text-blue-400 text-sm font-medium inline-flex items-center gap-1">看商品与价格 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
+            </a>
+
+            <a href="/category/service/" class="bento-card p-8 md:p-10 reveal group block">
+                <svg class="w-11 h-11 text-green-500 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                <h3 class="text-2xl font-semibold text-white mb-3 group-hover:text-blue-400 transition">独立站搭建</h3>
+                <p class="text-gray-400 text-base leading-relaxed mb-6">Shopify 主题定制、支付对接、GA4 埋点与基础 SEO，按可被搜索收录的标准交付。</p>
+                <span class="text-blue-400 text-sm font-medium inline-flex items-center gap-1">看交付范围 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
+            </a>
+
+            <a href="/category/tiktok/" class="bento-card p-8 md:p-10 reveal group block">
+                <svg class="w-11 h-11 text-pink-500 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                <h3 class="text-2xl font-semibold text-white mb-3 group-hover:text-blue-400 transition">TikTok 与直播</h3>
+                <p class="text-gray-400 text-base leading-relaxed mb-6">橱窗带货开通、海外账号资源、直播低延迟节点，覆盖东南亚主要站点。</p>
+                <span class="text-blue-400 text-sm font-medium inline-flex items-center gap-1">看商品与价格 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
             </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(400px,auto)]">
-            
-            <!-- Card 1: TikTok -->
-            <div class="bento-card col-span-1 lg:col-span-2 p-8 md:p-12 flex flex-col md:flex-row justify-between relative group reveal">
-                <div class="z-10 flex flex-col justify-between h-full max-w-lg">
-                    <div>
-                        <span class="text-blue-400 font-semibold tracking-wide text-sm uppercase mb-2 block">热销服务</span>
-                        <h3 class="text-3xl md:text-4xl font-semibold text-white mb-4">TikTok 橱窗号</h3>
-                        <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                            无需漫长等待，即刻开启带货之旅。覆盖东南亚多国，0粉挂车，安全稳定。
-                        </p>
-                        <div class="flex flex-wrap gap-4 mb-8">
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇸🇬 新加坡</span>
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇲🇾 马来西亚</span>
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇮🇩 印尼</span>
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇹🇭 泰国</span>
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇵🇭 菲律宾</span>
-                            <span class="px-3 py-1 rounded-full border border-gray-700 text-sm text-gray-300">🇻🇳 越南</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-6">
-                        <span class="text-2xl font-semibold">¥1,000 <span class="text-sm text-gray-500 font-normal">/ 起</span></span>
-                        <button onclick="openPaymentModal('tiktok')" class="btn-apple px-6 py-2 text-sm font-medium">联系购买</button>
-                    </div>
-                </div>
-                <div class="absolute right-0 bottom-0 w-1/2 h-full bg-gradient-to-l from-pink-500/10 to-transparent pointer-events-none md:block hidden"></div>
-                <svg class="absolute right-10 bottom-10 w-48 h-48 text-gray-800/50 -rotate-12 group-hover:scale-110 transition duration-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a4 4 0 0 1-8 0" /><path d="M3.103 6.034h17.794" /><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /></svg>
-            </div>
+        <div class="flex items-baseline justify-between mb-10 reveal">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">出海知识库</h2>
+            <a href="/wiki/" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1 transition">全部文章 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></a>
+        </div>
 
-            <!-- Card 2: Network -->
-            <div class="bento-card p-8 md:p-10 flex flex-col justify-between relative group reveal" style="transition-delay: 0.1s">
-                <div class="z-10">
-                    <svg class="w-12 h-12 text-purple-500 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01" /><path d="M2 8.82a15 15 0 0 1 20 0" /><path d="M5 12.859a10 10 0 0 1 14 0" /><path d="M8.5 16.429a5 5 0 0 1 7 0" /></svg>
-                    <h3 class="text-2xl font-semibold text-white mb-3">直播网络增强</h3>
-                    <p class="text-gray-400 text-base leading-relaxed mb-6">
-                        专为直播设计的低延迟节点。原生独立 IP，告别卡顿。
-                    </p>
-                    <ul class="space-y-3 mb-8 text-sm text-gray-400">
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg> 月付版 ¥300/月</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" /><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" /></svg> 包年版 ¥1,800/年</li>
-                    </ul>
+        <div class="space-y-5">
+            <a href="/wiki/fb-account-types/" class="bento-card group flex flex-col md:flex-row gap-6 p-6 md:p-8 items-start md:items-center reveal">
+                <div class="flex-1">
+                    <div class="text-xs text-blue-400 font-semibold uppercase tracking-wide mb-2">Facebook</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white mb-2 group-hover:text-blue-400 transition">FB 账号类型完全指南：白号、三解号、大小黑都是什么</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">11 种账号分类、养号周期、哪些能直接投广告、哪些一登就死。看完你就知道该买哪种。</p>
                 </div>
-                <div class="flex items-center justify-between mt-auto">
-                    <span class="text-xl font-semibold">¥300 <span class="text-sm text-gray-500">/ 起</span></span>
-                    <button onclick="openPaymentModal('network')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
-                </div>
-            </div>
+                <span class="text-blue-400 text-sm font-medium shrink-0 inline-flex items-center gap-1">阅读 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
+            </a>
 
-            <!-- Card 3: Shopify -->
-            <div class="bento-card p-8 md:p-10 flex flex-col justify-between relative group reveal" style="transition-delay: 0.2s">
-                <div class="z-10">
-                    <svg class="w-12 h-12 text-green-500 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M3 9h18" /><path d="M9 21V9" /></svg>
-                    <h3 class="text-2xl font-semibold text-white mb-3">Shopify 建站</h3>
-                    <p class="text-gray-400 text-base leading-relaxed mb-6">
-                        不仅是网站，更是品牌阵地。包含支付对接与 SEO 优化。
-                    </p>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <p>• Premium 主题定制</p>
-                        <p>• PayPal/Stripe 配置</p>
-                        <p>• GA4 数据追踪</p>
-                    </div>
+            <a href="/wiki/bm-guide/" class="bento-card group flex flex-col md:flex-row gap-6 p-6 md:p-8 items-start md:items-center reveal">
+                <div class="flex-1">
+                    <div class="text-xs text-purple-400 font-semibold uppercase tracking-wide mb-2">Meta</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white mb-2 group-hover:text-blue-400 transition">BM 开户与广告账户类型：个人户、企业户、二不限怎么选</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">BM 是什么、三种账户的限额与稳定性差异、什么阶段该换企业户，一次讲清。</p>
                 </div>
-                <div class="flex items-center justify-between mt-8">
-                    <span class="text-xl font-semibold">¥2,999</span>
-                    <button onclick="openPaymentModal('shopify')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
-                </div>
-            </div>
+                <span class="text-blue-400 text-sm font-medium shrink-0 inline-flex items-center gap-1">阅读 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
+            </a>
 
-            <!-- Card 4: Facebook -->
-            <div class="bento-card p-8 md:p-10 flex flex-col justify-between relative group reveal" style="transition-delay: 0.3s">
-                <div class="z-10">
-                    <svg class="w-12 h-12 text-blue-600 mb-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
-                    <h3 class="text-2xl font-semibold text-white mb-3">Facebook 账号与开户</h3>
-                    <p class="text-gray-400 text-base leading-relaxed mb-4">
-                        专业提供稳定可靠的 Meta 资产，确保投放畅通无阻。
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">FB 普通账号</span>
-                            <span class="text-white">¥150</span>
-                        </div>
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">FB 公共主页</span>
-                            <span class="text-white">¥1,200</span>
-                        </div>
-                        <div class="flex justify-between text-sm border-b border-gray-800 pb-2">
-                            <span class="text-gray-400">BM 企业号开户</span>
-                            <span class="text-white">¥6,500</span>
-                        </div>
-                    </div>
+            <a href="/wiki/tiktok-shop-guide/" class="bento-card group flex flex-col md:flex-row gap-6 p-6 md:p-8 items-start md:items-center reveal">
+                <div class="flex-1">
+                    <div class="text-xs text-pink-400 font-semibold uppercase tracking-wide mb-2">TikTok</div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-white mb-2 group-hover:text-blue-400 transition">TikTok 橱窗号怎么开：各国门槛、所需资料与常见坑</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">东南亚六国的开通条件、0 粉挂车的真实限制、为什么自己开的号经常掉。</p>
                 </div>
-                <div class="flex items-center justify-between mt-8">
-                    <span class="text-xl font-semibold">¥150 <span class="text-sm text-gray-500">/ 起</span></span>
-                    <button onclick="openPaymentModal('essentials')" class="btn-apple-outline px-5 py-2 text-xs font-medium">联系购买</button>
-                </div>
-            </div>
-
-            <!-- Card 5: Ads -->
-            <div class="bento-card col-span-1 lg:col-span-2 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#1d1d1f] to-[#161617] reveal" style="transition-delay: 0.4s">
-                <div class="max-w-md">
-                    <span class="text-gradient-gold font-semibold tracking-wide text-sm uppercase mb-2 block">核心业务</span>
-                    <h3 class="text-3xl font-semibold text-white mb-4">广告代投流量增长</h3>
-                    <p class="text-gray-400 text-lg mb-6">
-                        Google / Facebook / TikTok 多渠道策略。<br>
-                        精准受众定位，ROI 导向，无效不收费。
-                    </p>
-                    <div class="flex gap-4 text-sm text-gray-500 font-medium">
-                        <span class="flex items-center gap-1"><svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> 开户协助</span>
-                        <span class="flex items-center gap-1"><svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> 素材优化</span>
-                    </div>
-                </div>
-                <div class="mt-8 md:mt-0 text-center md:text-right">
-                    <div class="text-4xl font-semibold text-white mb-1">10%</div>
-                    <div class="text-sm text-gray-500 mb-6">广告消耗服务费</div>
-                    <button onclick="openPaymentModal('ads')" class="btn-apple px-8 py-3 text-sm font-medium">联系购买</button>
-                </div>
-            </div>
-
+                <span class="text-blue-400 text-sm font-medium shrink-0 inline-flex items-center gap-1">阅读 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span>
+            </a>
         </div>
     </section>
 
