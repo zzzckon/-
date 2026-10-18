@@ -130,6 +130,13 @@ BASE_CSS = f"""
     .cat-head {{ padding: 56px 0 8px; }}
     h2.sec {{ font-size: 24px; margin: 0 0 8px; font-weight: 600; }}
     .muted {{ color: #86868b; font-size: 15px; }}
+    .grad {{ background: linear-gradient(135deg,#2997ff,#7cc7ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
+    .trust {{ display: flex; flex-wrap: wrap; gap: 18px; margin: 22px 0 26px; font-size: 13px; color: #a1a1a6; }}
+    .catnav {{ display: flex; flex-wrap: wrap; gap: 10px; padding-bottom: 8px; }}
+    .pill {{ display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 980px;
+             border: 1px solid #3a3a3c; color: #f5f5f7; font-size: 14px; }}
+    .pill:hover {{ border-color: #2997ff; color: #2997ff; text-decoration: none; }}
+    .pill .n {{ font-size: 11px; color: #86868b; background: #2a2a2c; padding: 1px 7px; border-radius: 980px; }}
 """
 
 
@@ -231,12 +238,23 @@ def build_products_index(data):
     for cat in data["categories"]:
         for item in cat["items"]:
             cards.append(card_html(item, cat))
+    catnav = "".join(
+        f'<a class="pill" href="/category/{c["slug"]}/">{esc(c["name"])} <span class="n">{len(c["items"])}</span></a>'
+        for c in data["categories"]
+    )
     body = f"""    <main class="wrap">
       <header class="hero">
-        <div class="eyebrow">全部商品</div>
-        <h1>社交媒体广告资产</h1>
-        <p class="lede">Facebook 广告账户、TikTok 资产、邮箱资源与建站代运营服务。
-        价格与库存实时同步，支持支付宝、微信与 USDT 付款。</p>
+        <div class="eyebrow">全球广告资产商城</div>
+        <h1>社交媒体广告资产<br><span class="grad">一站式采购</span></h1>
+        <p class="lede">Facebook 企业广告账户、养号、TikTok 资产、邮箱资源与建站代运营。
+        下单前可先咨询，交付全程可追踪，支持支付宝 / 微信 / USDT。</p>
+        <div class="trust">
+          <span>✔ 现货 {sum(len(c["items"]) for c in data["categories"])} 款</span>
+          <span>✔ 30 分钟交付</span>
+          <span>✔ 7 天售后</span>
+          <span>✔ 支持开票</span>
+        </div>
+        <div class="catnav">{catnav}</div>
       </header>
       <div class="grid">
 {chr(10).join(cards)}
