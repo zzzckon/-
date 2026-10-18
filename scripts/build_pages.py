@@ -457,7 +457,7 @@ def build_sitemap(data):
         for item in cat["items"]:
             urls.append((f"/product/{item['id']}/", "0.7", "daily"))
     urls.append(("/wiki/", "0.8", "weekly"))
-    for slug in ("fb-account-types", "bm-guide", "tiktok-shop-guide"):
+    for slug in ("fb-account-types", "bm-guide", "tiktok-shop-guide", "shopify-dropshipping", "ad-rejection-guide"):
         urls.append((f"/wiki/{slug}/", "0.7", "monthly"))
     urls += [
         ("/privacy.html", "0.2", "yearly"),

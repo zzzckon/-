@@ -75,6 +75,14 @@
     .toc .t { font-size: 12px; color: #86868b; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
     .toc ol { margin: 0; }
     .toc li { font-size: 14px; margin-bottom: 6px; }
+    figure.fig { margin: 28px 0 30px; }
+    figure.fig img {
+      width: 100%; height: auto; display: block;
+      border-radius: 14px; border: 1px solid #2a2a2c; background: #0a0a0b;
+    }
+    figure.fig figcaption {
+      font-size: 13px; color: #6e6e73; margin-top: 10px; line-height: 1.6;
+    }
     footer { border-top: 1px solid #1d1d1f; padding: 32px 0; font-size: 12px; color: #6e6e73; margin-top: 40px; }
     footer .inner { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
 </style>
@@ -124,6 +132,22 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "主要是投放限制更少、适用品类更广，因此供应更少、价格更高。购买前要确认具体不限的项目。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一个 BM 可以绑几个广告账户？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常没有硬性上限，但账户过多会增加关联风险。建议按业务或地区分组，并保留备用 BM。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "开企业户需要营业执照吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通过代理开户通常需要主体资质。个人也可通过部分通道开通，但限制与稳定性会有差异。"
           }
         }
       ]
@@ -181,9 +205,11 @@
           <div class="t">本文目录</div>
           <ol>
             <li><a href="#what">BM 到底是什么</a></li>
+            <li><a href="#asset">BM 里装了什么</a></li>
             <li><a href="#diff">个人户 / 企业户 / 二不限的区别</a></li>
             <li><a href="#when">什么阶段该换企业户</a></li>
             <li><a href="#limit">限额和稳定性怎么看</a></li>
+            <li><a href="#reject">广告被拒登怎么办</a></li>
             <li><a href="#checklist">开户前准备清单</a></li>
           </ol>
         </div>
@@ -191,6 +217,9 @@
         <h2 id="what">BM 到底是什么</h2>
         <p>BM 是 Meta 商务管理平台（Business Manager）的简称。它可以理解成一个<strong>资产容器</strong>：把广告账户、公共主页、像素、商品目录、支付方式都装进一个组织下面，然后给不同的人分配不同权限。</p>
         <p>没有 BM 的时候，广告账户挂在个人账号上——个人号一封，账户和素材全没。有了 BM，资产挂在组织下，个人号只是「操作者」，换人、加人都不影响资产本身。</p>
+
+        <h2 id="asset">BM 里装了什么</h2>
+<figure class="fig"><img src="/assets/img/wiki/bm-structure.png" width="1200" height="720" loading="lazy" decoding="async" alt="BM 商务管理平台内部结构：广告账户、公共主页、像素、支付方式"><figcaption>资产挂在组织下，个人号只是操作者；换人不断资产，这是 BM 存在的意义</figcaption></figure>
         <table>
           <thead><tr><th>资产</th><th>挂个人号下</th><th>挂 BM 下</th></tr></thead>
           <tbody>
@@ -200,6 +229,7 @@
             <tr><td>团队协作</td><td>只能共享账号密码</td><td>分级权限</td></tr>
           </tbody>
         </table>
+        <p>其中<strong>像素最容易被低估</strong>。像素积累的是转化数据，换一次就要重新学习，通常要几千次转化才能恢复原来的投放效率。所以像素一定要绑在 BM 而不是个人号上。</p>
 
         <h2 id="diff">个人户 / 企业户 / 二不限的区别</h2>
         <h3>个人广告账户</h3>
@@ -208,6 +238,16 @@
         <p>通过代理走企业资质开通，绑定在 BM 下。优势是限额等级更高、有代理经理可协助申诉、支持更多资产类型。行业里常说的「电商户」「游戏户」就是按用途和资质分的不同开通通道。</p>
         <h3>二不限 / 三不限</h3>
         <p>指投放限制较少的账户类型（例如不限制某些品类或投放范围）。这类账户通常价格更高，适合已经跑通模式、需要放量的团队。<strong>注意</strong>：不同代理对「二不限」的具体含义说法不完全一致，签约前要问清到底不限哪两项。</p>
+
+        <table>
+          <thead><tr><th>对比项</th><th>个人户</th><th>企业户</th><th>二不限</th></tr></thead>
+          <tbody>
+            <tr><td>开通速度</td><td>当天</td><td>1-3 天</td><td>视资质</td></tr>
+            <tr><td>初始日限额</td><td>低</td><td>中等</td><td>高</td></tr>
+            <tr><td>被封后申诉</td><td>自助，成功率低</td><td>代理协助</td><td>代理协助</td></tr>
+            <tr><td>适用阶段</td><td>测试</td><td>稳定投放</td><td>规模化放量</td></tr>
+          </tbody>
+        </table>
 
         <h2 id="when">什么阶段该换企业户</h2>
         <ul>
@@ -230,6 +270,20 @@
         </ul>
         <p>所以「买一个高限额账户」不是终点——<strong>账户买来后如果违规操作，限额照样会掉</strong>。这也是为什么素材合规和落地页质量比账户等级更值得投入。</p>
 
+        <h2 id="reject">广告被拒登怎么办</h2>
+        <p>拒登（Disapproved）是新账户最常遇到的问题，通常不是账户问题，而是素材或落地页问题：</p>
+        <table>
+          <thead><tr><th>拒登原因</th><th>常见表现</th><th>处理方式</th></tr></thead>
+          <tbody>
+            <tr><td>误导性内容</td><td>绝对化用语、夸大收益</td><td>改为具体、可验证的描述</td></tr>
+            <tr><td>成人 / 敏感品类</td><td>服装、健康类素材暴露度过高</td><td>换素材或调整落地页</td></tr>
+            <tr><td>落地页不一致</td><td>广告说 A、页面卖 B</td><td>确保主推商品一致</td></tr>
+            <tr><td>落地页缺失信息</td><td>没有联系方式、没有隐私政策</td><td>补齐页脚与政策页</td></tr>
+            <tr><td>账号本身受限</td><td>所有素材都拒登</td><td>换户或走申诉</td></tr>
+          </tbody>
+        </table>
+        <p><strong>先判断是「素材问题」还是「账户问题」</strong>：换一条肯定合规的素材试试，如果还是拒登，才说明是账户层面的限制。</p>
+
         <h2 id="checklist">开户前准备清单</h2>
         <ol>
           <li>营业执照或主体资质（代理开户通常需要）</li>
@@ -247,8 +301,8 @@
           <a class="btn" href="/products/">查看价格与库存</a>
           <a class="btn ghost" href="/#contact">直接咨询</a>
         </div>
-        <h2>常见问题</h2><h3>BM 被封了怎么办？</h3><p>先确认是 BM 本身被限制还是下属资产被限制。BM 被限制通常可以通过申诉或由代理协助处理，但周期不确定，所以建议保留备用 BM。</p><h3>个人户能转成企业户吗？</h3><p>不能直接转换。企业广告账户需要按对应通道重新开通，历史数据需要通过像素和主页延续，而不是账户本身。</p><h3>二不限比普通企业户贵在哪？</h3><p>主要是投放限制更少、适用品类更广，因此供应更少、价格更高。购买前要确认具体不限的项目。</p>
-        <h2>相关内容</h2><ul><li><a href="/wiki/fb-account-types/">FB 账号类型完全指南</a></li><li><a href="/wiki/tiktok-shop-guide/">TikTok 橱窗号怎么开</a></li></ul>
+        <h2>常见问题</h2><h3>BM 被封了怎么办？</h3><p>先确认是 BM 本身被限制还是下属资产被限制。BM 被限制通常可以通过申诉或由代理协助处理，但周期不确定，所以建议保留备用 BM。</p><h3>个人户能转成企业户吗？</h3><p>不能直接转换。企业广告账户需要按对应通道重新开通，历史数据需要通过像素和主页延续，而不是账户本身。</p><h3>二不限比普通企业户贵在哪？</h3><p>主要是投放限制更少、适用品类更广，因此供应更少、价格更高。购买前要确认具体不限的项目。</p><h3>一个 BM 可以绑几个广告账户？</h3><p>通常没有硬性上限，但账户过多会增加关联风险。建议按业务或地区分组，并保留备用 BM。</p><h3>开企业户需要营业执照吗？</h3><p>通过代理开户通常需要主体资质。个人也可通过部分通道开通，但限制与稳定性会有差异。</p>
+        <h2>相关内容</h2><ul><li><a href="/wiki/fb-account-types/">FB 账号类型完全指南</a></li><li><a href="/wiki/tiktok-shop-guide/">TikTok 橱窗号怎么开</a></li><li><a href="/wiki/ad-rejection-guide/">广告被拒登怎么办</a></li></ul>
       </article>
     </main>
 

@@ -75,6 +75,14 @@
     .toc .t { font-size: 12px; color: #86868b; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
     .toc ol { margin: 0; }
     .toc li { font-size: 14px; margin-bottom: 6px; }
+    figure.fig { margin: 28px 0 30px; }
+    figure.fig img {
+      width: 100%; height: auto; display: block;
+      border-radius: 14px; border: 1px solid #2a2a2c; background: #0a0a0b;
+    }
+    figure.fig figcaption {
+      font-size: 13px; color: #6e6e73; margin-top: 10px; line-height: 1.6;
+    }
     footer { border-top: 1px solid #1d1d1f; padding: 32px 0; font-size: 12px; color: #6e6e73; margin-top: 40px; }
     footer .inner { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
 </style>
@@ -132,6 +140,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "常见周期是 7 到 30 天，取决于用途。如果目的是尽快投广告，应该直接走企业广告账户，而不是养个人号。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "账号被封了能退钱吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常账号类资产一经交付不支持退换，但可靠卖家会提供 7 天内的补发。购买前应确认补发条款是否写在页面上。"
           }
         }
       ]
@@ -192,6 +208,8 @@
             <li><a href="#types">11 种常见分类是什么</a></li>
             <li><a href="#warmup">养号到底在养什么</a></li>
             <li><a href="#ads">想直接投广告该买哪种</a></li>
+            <li><a href="#price">为什么价格差这么多</a></li>
+            <li><a href="#judge">怎么判断卖家靠不靠谱</a></li>
             <li><a href="#scam">哪些说法是坑</a></li>
           </ol>
         </div>
@@ -199,6 +217,7 @@
         <h2 id="why">为什么账号分这么多类型</h2>
         <p>Facebook 的风控不是一道闸门，而是一串连续的状态判断：这个账号像不像真人、有没有真实社交关系、能不能承担广告消费、历史上有没有违规记录。</p>
         <p>账号交易市场里的各种叫法，本质上是<strong>把这条连续光谱切成几段</strong>，方便报价。所以你会看到「白号」「三解号」「大小黑」「不充电」这类词——它们描述的都是同一个东西的不同切面：<strong>这个号现在处在什么状态，能干什么，干过什么</strong>。</p>
+<figure class="fig"><img src="/assets/img/wiki/fb-account-spectrum.png" width="1200" height="700" loading="lazy" decoding="async" alt="Facebook 账号可用性光谱：白号、养护号、有广告功能、企业广告户、二不限"><figcaption>账号类型的本质是一条可用性光谱：越往右越能承担投放，价格越高，也越依赖环境</figcaption></figure>
         <div class="callout">
           <p>买号之前先问自己一个问题：我要它登录发内容，还是要它挂广告？这两个需求对应的账号类型完全不同，买错了号 90% 会浪费。</p>
         </div>
@@ -213,7 +232,7 @@
             <tr><td>专页号</td><td>已绑定或可绑定公共主页的账号</td><td>品牌页运营</td></tr>
             <tr><td>有绿标号</td><td>带认证或信任标记的账号</td><td>需要更高信任度</td></tr>
             <tr><td>大小号</td><td>主账号与辅助账号的搭配组合</td><td>矩阵运营、分散风险</td></tr>
-            <tr><td>三解号 / 二解号</td><td>被限制后通过申诉解除某种限制的账号（三解=解除三类限制）</td><td>需要较高投放容忍度</td></tr>
+            <tr><td>三解号 / 二解号</td><td>被限制后通过申诉解除某种限制的账号</td><td>需要较高投放容忍度</td></tr>
             <tr><td>小黑 / 大白号</td><td>行业黑话，指历史状态与当前可用性的不同组合</td><td>价格低，风险也高</td></tr>
             <tr><td>不充电号</td><td>没有历史广告消费记录的账号</td><td>需要自己起量</td></tr>
             <tr><td>Meta 认证账号</td><td>完成 Meta 官方身份验证</td><td>长期品牌投放</td></tr>
@@ -221,6 +240,11 @@
           </tbody>
         </table>
         <p>注意：<strong>这些术语没有官方定义</strong>，不同卖家的叫法可能不一致。看到「三解」这种词，一定要问清具体解除了哪三类限制、有没有截图证据。</p>
+
+        <h3>几个容易被误解的词</h3>
+        <p><strong>「解号」不是「解封」。</strong>解号指的是解除了某一类限制（比如广告功能限制、加好友限制），不代表账号完全没有历史问题。三解、二解只是解除的类别数量不同。</p>
+        <p><strong>「不充电」不是「没余额」。</strong>它指的是这个账号没有产生过广告消费记录。对平台来说，没花过钱的账号历史数据少，初始限额通常更低。</p>
+        <p><strong>「大小黑」没有统一标准。</strong>这是纯粹的行业黑话，不同卖家定义不同，甚至互相矛盾。价格特别低的「黑号」通常意味着来源不明或已被标记，不建议用来跑正式投放。</p>
 
         <h2 id="warmup">养号到底在养什么</h2>
         <p>养号不是玄学，是在人为补足这几项信号：</p>
@@ -232,6 +256,11 @@
         </ul>
         <p>养号周期通常要 <strong>7 到 30 天</strong>，视账号用途而定。想马上投广告的，养号这条路基本走不通——那是企业广告账户要解决的问题。</p>
 
+        <h3>养号常见的三个操作错误</h3>
+        <p><strong>一是急着加满好友。</strong>新号第一天就加几十个人，会被判定为营销号。正常人的社交增长是缓慢的。</p>
+        <p><strong>二是频繁切换 IP。</strong>今天用 A 国节点，明天用 B 国，平台会认为账号被盗或异常。养号期间 IP 应尽量固定。</p>
+        <p><strong>三是资料填得太完美。</strong>头像、封面、简介一次全部填满，反而像批量生成。真实用户的资料是逐步完善的。</p>
+
         <h2 id="ads">想直接投广告该买哪种</h2>
         <p>这是最多人踩坑的地方。个人号 + 自己开的广告账户，限额低、审核慢、封了很难申诉。真正用来跑量的通常是<strong>企业广告账户（代理开户）</strong>，特征是：</p>
         <ul>
@@ -241,6 +270,29 @@
           <li>支持绑定公共主页、像素、域名</li>
         </ul>
         <p>所以正确的路径一般是：<strong>先有 BM 或企业广告账户，再配套个人号做操作者</strong>，而不是反过来。</p>
+<figure class="fig"><img src="/assets/img/wiki/price-anchor.png" width="1200" height="620" loading="lazy" decoding="async" alt="个人户、企业户、二不限账户的价格与能力对比"><figcaption>差价买的不是账号本身，而是「被封之后还能不能救」</figcaption></figure>
+        <h2 id="price">为什么价格差这么多</h2>
+        <p>同样是「Facebook 账号」，从几美元到几十美元都有，差异来自三件事：</p>
+        <table>
+          <thead><tr><th>差异来源</th><th>低价账号</th><th>高价账号</th></tr></thead>
+          <tbody>
+            <tr><td>注册与养护成本</td><td>批量注册，无养护</td><td>独立环境，养护数周</td></tr>
+            <tr><td>可用功能</td><td>只能登录</td><td>可开广告、可绑 BM</td></tr>
+            <tr><td>出问题后的补救</td><td>基本没有</td><td>可申诉、可补发</td></tr>
+          </tbody>
+        </table>
+        <p>换句话说：<strong>便宜的账号是「一次性消耗品」，贵的是「可维护的资产」</strong>。如果你的投放已经跑通、每天有稳定消耗，用便宜号反复开新户的综合成本往往更高——重新起量、素材重审、像素重学，损失的是时间。</p>
+        <p>反过来，如果只是要测试选品、验证素材，低价号反而更合适：<strong>用最少的钱先确认这条路能不能走通</strong>。</p>
+
+        <h2 id="judge">怎么判断卖家靠不靠谱</h2>
+        <p>比价格更有效的判断标准是这四条：</p>
+        <ol>
+          <li><strong>能不能说清账号来源</strong>（自注册、代理开户、养护团队）</li>
+          <li><strong>能不能给登录截图或录屏</strong>，而不是网图</li>
+          <li><strong>出问题多久内补发</strong>，有没有明确写在页面上</li>
+          <li><strong>付款方式是否可追溯</strong>（对公、可开票通常意味着长期经营）</li>
+        </ol>
+        <p>反过来，只说「绝对稳定」「永不被封」、又不愿意说明来源和售后条款的，风险最高。</p>
 
         <h2 id="scam">哪些说法是坑</h2>
         <ul>
@@ -257,8 +309,8 @@
           <a class="btn" href="/products/">查看价格与库存</a>
           <a class="btn ghost" href="/#contact">直接咨询</a>
         </div>
-        <h2>常见问题</h2><h3>买 FB 账号能直接投广告吗？</h3><p>个人号通常需要先绑定 BM 并开通广告账户，且初始限额较低。要直接投放，一般购买企业广告账户（含 BM 授权）更合适。</p><h3>三解号、二解号是什么意思？</h3><p>指账号曾被平台限制，之后通过申诉解除了若干类限制。具体解除哪几类没有统一标准，购买前务必让卖家说明并提供证据。</p><h3>新号和老号差在哪？</h3><p>主要是注册时长带来的社交记录与行为轨迹差异。老号通常更耐受风控，但也更贵；新号便宜但需要自己养。</p><h3>养号要多久？</h3><p>常见周期是 7 到 30 天，取决于用途。如果目的是尽快投广告，应该直接走企业广告账户，而不是养个人号。</p>
-        <h2>相关内容</h2><ul><li><a href="/wiki/bm-guide/">BM 开户与广告账户类型：个人户、企业户、二不限怎么选</a></li><li><a href="/wiki/tiktok-shop-guide/">TikTok 橱窗号怎么开：各国门槛与常见坑</a></li></ul>
+        <h2>常见问题</h2><h3>买 FB 账号能直接投广告吗？</h3><p>个人号通常需要先绑定 BM 并开通广告账户，且初始限额较低。要直接投放，一般购买企业广告账户（含 BM 授权）更合适。</p><h3>三解号、二解号是什么意思？</h3><p>指账号曾被平台限制，之后通过申诉解除了若干类限制。具体解除哪几类没有统一标准，购买前务必让卖家说明并提供证据。</p><h3>新号和老号差在哪？</h3><p>主要是注册时长带来的社交记录与行为轨迹差异。老号通常更耐受风控，但也更贵；新号便宜但需要自己养。</p><h3>养号要多久？</h3><p>常见周期是 7 到 30 天，取决于用途。如果目的是尽快投广告，应该直接走企业广告账户，而不是养个人号。</p><h3>账号被封了能退钱吗？</h3><p>通常账号类资产一经交付不支持退换，但可靠卖家会提供 7 天内的补发。购买前应确认补发条款是否写在页面上。</p>
+        <h2>相关内容</h2><ul><li><a href="/wiki/bm-guide/">BM 开户与广告账户类型：个人户、企业户、二不限怎么选</a></li><li><a href="/wiki/tiktok-shop-guide/">TikTok 橱窗号怎么开：各国门槛与常见坑</a></li><li><a href="/wiki/shopify-dropshipping/">独立站选品与建站：从 0 到能投放</a></li></ul>
       </article>
     </main>
 

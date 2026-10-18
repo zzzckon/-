@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独立站选品与建站：从 0 到能投放的完整流程 | 玄澜跨境</title>
+    <meta name="description" content="独立站与平台店的本质区别、选品排除法、用最小成本验证产品、详情页必备的 6 个模块，以及新手的 4 个常见错误。">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://xuanlanch.dpdns.org/wiki/shopify-dropshipping/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="玄澜跨境">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="独立站选品与建站：从 0 到能投放的完整流程 | 玄澜跨境">
+    <meta property="og:description" content="独立站与平台店的本质区别、选品排除法、用最小成本验证产品、详情页必备的 6 个模块，以及新手的 4 个常见错误。">
+    <meta property="og:url" content="https://xuanlanch.dpdns.org/wiki/shopify-dropshipping/">
+    <meta property="og:image" content="https://xuanlanch.dpdns.org/assets/img/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #000; color: #f5f5f7; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Segoe UI', sans-serif;
+      line-height: 1.85; -webkit-font-smoothing: antialiased;
+    }
+    a { color: #2997ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    nav { position: sticky; top: 0; z-index: 20; background: rgba(0,0,0,.82);
+      backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.1); }
+    nav .inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px;
+      display: flex; align-items: center; gap: 24px; }
+    nav .brand { font-weight: 600; font-size: 17px; color: #f5f5f7; }
+    nav .links { display: flex; gap: 20px; margin-left: auto; font-size: 13px; }
+    nav .links a { color: #a1a1a6; }
+    nav .links a:hover { color: #fff; text-decoration: none; }
+    nav .cta { background: #2997ff; color: #fff; padding: 7px 16px; border-radius: 980px; }
+    nav .cta:hover { background: #0071e3; color: #fff; text-decoration: none; }
+    @media (max-width: 720px) { nav .links { display: none; } }
+    .crumbs { font-size: 12px; color: #6e6e73; padding: 24px 0 0; }
+    .crumbs a { color: #86868b; }
+    article { padding: 12px 0 40px; }
+    .eyebrow { color: #2997ff; font-size: 12px; font-weight: 600; letter-spacing: .09em;
+      text-transform: uppercase; margin: 22px 0 12px; }
+    h1 { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.25; letter-spacing: -.02em;
+      font-weight: 600; margin: 0 0 16px; }
+    .lede { font-size: 17px; color: #a1a1a6; margin: 0 0 10px; }
+    .meta { font-size: 12px; color: #6e6e73; margin-bottom: 34px; }
+    h2 { font-size: 22px; margin: 46px 0 14px; font-weight: 600; letter-spacing: -.01em; }
+    h3 { font-size: 16px; margin: 26px 0 8px; font-weight: 600; color: #f5f5f7; }
+    p { color: #a1a1a6; font-size: 15.5px; margin: 0 0 14px; }
+    ul, ol { padding-left: 22px; margin: 0 0 16px; }
+    li { color: #a1a1a6; font-size: 15.5px; margin-bottom: 9px; }
+    strong { color: #f5f5f7; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 18px 0 22px; }
+    th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid #2a2a2c; vertical-align: top; }
+    th { color: #86868b; font-weight: 500; font-size: 13px; background: #141415; }
+    td { color: #d2d2d7; }
+    .callout { background: #141415; border-left: 2px solid #2997ff; padding: 16px 18px;
+      margin: 22px 0; border-radius: 0 10px 10px 0; }
+    .callout p { margin: 0; font-size: 14.5px; }
+    .cta-box { background: #1d1d1f; border: 1px solid #2a2a2c; border-radius: 18px;
+      padding: 24px; margin: 40px 0 0; }
+    .cta-box h2 { margin: 0 0 8px; font-size: 18px; }
+    .cta-box p { margin: 0 0 16px; font-size: 14px; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; background: #2997ff;
+      color: #fff; padding: 10px 20px; border-radius: 980px; font-size: 14px; font-weight: 500; }
+    .btn:hover { background: #0071e3; color: #fff; text-decoration: none; }
+    .btn.ghost { background: transparent; border: 1px solid #2997ff; color: #2997ff; margin-left: 10px; }
+    .btn.ghost:hover { background: #2997ff; color: #fff; }
+    .toc { background: #141415; border-radius: 14px; padding: 18px 22px; margin: 26px 0 8px; }
+    .toc .t { font-size: 12px; color: #86868b; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+    .toc ol { margin: 0; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    figure.fig { margin: 28px 0 30px; }
+    figure.fig img {
+      width: 100%; height: auto; display: block;
+      border-radius: 14px; border: 1px solid #2a2a2c; background: #0a0a0b;
+    }
+    figure.fig figcaption {
+      font-size: 13px; color: #6e6e73; margin-top: 10px; line-height: 1.6;
+    }
+    footer { border-top: 1px solid #1d1d1f; padding: 32px 0; font-size: 12px; color: #6e6e73; margin-top: 40px; }
+    footer .inner { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "独立站选品与建站：从 0 到能投放的完整流程",
+      "description": "独立站与平台店的本质区别、选品排除法、用最小成本验证产品、详情页必备的 6 个模块，以及新手的 4 个常见错误。",
+      "datePublished": "2026-10-18",
+      "dateModified": "2026-10-18",
+      "author": {
+        "@type": "Organization",
+        "name": "玄澜跨境"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "玄澜跨境"
+      },
+      "mainEntityOfPage": "https://xuanlanch.dpdns.org/wiki/shopify-dropshipping/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "独立站一定要用 Shopify 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不一定，但 Shopify 在支付、主题、应用生态上最成熟，适合快速上线。其他方案在定制性和成本上各有取舍。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "建站要多久？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "标准配置（主题定制 + 支付对接 + 数据埋点 + 基础 SEO）通常 7-10 个工作日，取决于页面数量和支付通道审核时间。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "需要准备什么资质？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主要是收款主体（个人或企业）、支付通道（PayPal / Stripe）以及对公账户。部分通道对企业资质有要求。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "独立站没有流量怎么办？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "独立站的流量只能自己解决：广告投放或内容运营。商品页再好，没有流量也不会出单。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://xuanlanch.dpdns.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "出海知识库",
+          "item": "https://xuanlanch.dpdns.org/wiki/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "独立站选品与建站：从 0 到能投放的完整流程",
+          "item": "https://xuanlanch.dpdns.org/wiki/shopify-dropshipping/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <nav>
+      <div class="inner">
+        <a class="brand" href="/">🌐 玄澜跨境</a>
+        <div class="links">
+          <a href="/products/">商品价格</a>
+          <a href="/wiki/">知识库</a>
+          <a href="/category/facebook/">Facebook</a>
+          <a href="/category/tiktok/">TikTok</a>
+          <a class="cta" href="/#contact">立即咨询</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <div class="crumbs"><a href="/">首页</a> / <a href="/wiki/">出海知识库</a> / 独立站选品与建站：从 0 到能投放的完整流程</div>
+      <article>
+        <div class="eyebrow">独立站</div>
+        <h1>独立站选品与建站：从 0 到能投放的完整流程</h1>
+        <p class="lede">独立站不是「更高级的店铺」，是一台需要燃料的机器。先想清楚燃料从哪来。</p>
+        <div class="meta">更新于 2026-10-18 · 阅读约 6 分钟</div>
+
+        <div class="toc">
+          <div class="t">本文目录</div>
+          <ol>
+            <li><a href="#what">独立站和平台店的本质区别</a></li>
+            <li><a href="#pick">选品：先排除，再挑选</a></li>
+            <li><a href="#validate">用最小成本验证一个品</a></li>
+            <li><a href="#page">详情页必须有的 6 个模块</a></li>
+            <li><a href="#cost">一个独立站的真实成本</a></li>
+            <li><a href="#mistake">新手最常犯的 4 个错</a></li>
+          </ol>
+        </div>
+
+        <h2 id="what">独立站和平台店的本质区别</h2>
+        <p>平台店买的是「现成流量」，独立站买的是「自己的资产」。这个区别决定了后面的所有动作。</p>
+        <table>
+          <thead><tr><th>维度</th><th>平台店</th><th>独立站</th></tr></thead>
+          <tbody>
+            <tr><td>流量来源</td><td>平台分配 + 站内搜索</td><td>自己买（广告）或自己做（内容）</td></tr>
+            <tr><td>客户归属</td><td>归平台</td><td>归你，可复用、可再营销</td></tr>
+            <tr><td>前期成本</td><td>低</td><td>中（建站 + 广告预算）</td></tr>
+            <tr><td>起量速度</td><td>有现成流量，快</td><td>慢，要跑通投放模型</td></tr>
+            <tr><td>风险</td><td>规则变动、封店</td><td>广告账户、支付通道</td></tr>
+          </tbody>
+        </table>
+        <p>一个常见的错误是：<strong>把独立站当成「更高级的店铺」</strong>去开，结果发现没流量。独立站本质是一台需要燃料的机器，燃料就是广告费或内容。</p>
+
+        <h2 id="pick">选品：先排除，再挑选</h2>
+        <p>新手选品最大的问题不是选错，而是在明显不该做的品类上浪费时间。先排除这五类：</p>
+        <table>
+          <thead><tr><th>要排除的品类</th><th>原因</th></tr></thead>
+          <tbody>
+            <tr><td>大件重货</td><td>物流成本吃掉利润，退换货更贵</td></tr>
+            <tr><td>强售后品类（电子、精密）</td><td>退货率和纠纷率高</td></tr>
+            <tr><td>侵权风险品（IP 周边）</td><td>广告被拒、账户被封</td></tr>
+            <tr><td>强监管品类（保健、医疗宣称）</td><td>合规成本极高</td></tr>
+            <tr><td>纯比价标品（手机壳、数据线）</td><td>价格战，广告跑不出正 ROI</td></tr>
+          </tbody>
+        </table>
+        <p>排除之后，按这三个特征筛选：</p>
+        <figure class="fig"><img src="/assets/img/wiki/shopify-funnel.png" width="1200" height="700" loading="lazy" decoding="async" alt="选品排除法与三个筛选特征"><figcaption>先排除五类高风险的品类，再用三个特征筛选；验证顺序是测素材 → 看加购 → 再备货</figcaption></figure>
+        <ul>
+          <li><strong>视觉可展示</strong>：能在 3 秒内让人看懂效果（解压、对比、前后变化）</li>
+          <li><strong>有溢价空间</strong>：毛利率至少 60%，才养得起广告</li>
+          <li><strong>复购或连带</strong>：能带来二次购买或组合销售</li>
+        </ul>
+
+        <h2 id="validate">用最小成本验证一个品</h2>
+        <p>不要一上来就备货。标准做法是<strong>先投广告，再决定要不要压库存</strong>：</p>
+        <ol>
+          <li>用 3-5 条不同角度的素材，每条小预算测试</li>
+          <li>预算是「能买够统计样本」的钱，而不是「买曝光」的钱</li>
+          <li>看 CTR 和加购率，而不是只看 ROI（样本太小时 ROI 无意义）</li>
+          <li>加购率过关再备货，否则换素材或换品</li>
+        </ol>
+        <div class="callout">
+          <p>判断标准：<strong>如果连加购都很少，问题在产品和页面；如果加购多但不成交，问题在价格和信任。</strong>这两个问题要用不同方法解决。</p>
+        </div>
+
+        <h2 id="page">详情页必须有的 6 个模块</h2>
+        <ol>
+          <li><strong>首屏价值主张</strong>：一句话说清是什么、解决什么、多少钱</li>
+          <li><strong>产品演示</strong>：图或视频，展示使用场景而不只是产品白底图</li>
+          <li><strong>信任元素</strong>：支付安全、退货政策、真实评价</li>
+          <li><strong>规格与物流</strong>：尺寸、材质、发货时效（海外买家极其在意）</li>
+          <li><strong>FAQ</strong>：把最常见的 5 个疑虑直接回答掉</li>
+          <li><strong>政策页</strong>：隐私政策、退换货条款（支付渠道与广告平台都会审）</li>
+        </ol>
+        <p>第 6 条最容易被忽略，但它直接影响两件事：<strong>支付通道审核通过率</strong>和<strong>广告账户的落地页合规评分</strong>。</p>
+
+        <h2 id="cost">一个独立站的真实成本</h2>
+        <table>
+          <thead><tr><th>项目</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>建站</td><td>主题、支付对接、数据埋点，一次性</td></tr>
+            <tr><td>域名与订阅</td><td>按年 / 按月固定支出</td></tr>
+            <tr><td>广告测试</td><td>验证阶段的主要成本，最容易低估</td></tr>
+            <tr><td>支付手续费</td><td>按交易额比例</td></tr>
+            <tr><td>素材制作</td><td>持续投入，不是一次性</td></tr>
+          </tbody>
+        </table>
+        <p>很多人只算了建站费用，忽略了<strong>测试预算才是大头</strong>。合理的预期是：建站成本的 3-10 倍会花在验证和放大上。</p>
+
+        <h2 id="mistake">新手最常犯的 4 个错</h2>
+        <ul>
+          <li><strong>先备货再测</strong>：库存压死现金流，还没验证就押注</li>
+          <li><strong>页面只放美图</strong>：没有价值主张、没有 FAQ、没有政策页</li>
+          <li><strong>一个品只测两天就放弃</strong>：数据量不够，结论不可信</li>
+          <li><strong>不装数据追踪</strong>：不知道转化发生在哪一步，优化全靠猜</li>
+        </ul>
+        <p>这四条里，<strong>数据追踪</strong>是最值得优先补齐的——没有它，后面所有优化都没有依据。</p>
+
+        <div class="cta-box">
+          <h2>需要直接拿到可用的账号？</h2>
+          <p>我们提供已交付的 Facebook 企业广告账户、养号与 TikTok 资产，现货可查，30 分钟内交付。</p>
+          <a class="btn" href="/products/">查看价格与库存</a>
+          <a class="btn ghost" href="/#contact">直接咨询</a>
+        </div>
+        <h2>常见问题</h2><h3>独立站一定要用 Shopify 吗？</h3><p>不一定，但 Shopify 在支付、主题、应用生态上最成熟，适合快速上线。其他方案在定制性和成本上各有取舍。</p><h3>建站要多久？</h3><p>标准配置（主题定制 + 支付对接 + 数据埋点 + 基础 SEO）通常 7-10 个工作日，取决于页面数量和支付通道审核时间。</p><h3>需要准备什么资质？</h3><p>主要是收款主体（个人或企业）、支付通道（PayPal / Stripe）以及对公账户。部分通道对企业资质有要求。</p><h3>独立站没有流量怎么办？</h3><p>独立站的流量只能自己解决：广告投放或内容运营。商品页再好，没有流量也不会出单。</p>
+        <h2>相关内容</h2><ul><li><a href="/wiki/bm-guide/">BM 开户与广告账户类型</a></li><li><a href="/wiki/ad-rejection-guide/">广告被拒登怎么办</a></li><li><a href="/wiki/fb-account-types/">FB 账号类型完全指南</a></li></ul>
+      </article>
+    </main>
+
+    <footer>
+      <div class="wrap inner">
+        <span>© <span id="year">2026</span> Xuanlan Global</span>
+        <span><a href="/">首页</a> · <a href="/products/">商品目录</a> · <a href="/wiki/">知识库</a> · <a href="/privacy.html">隐私政策</a></span>
+      </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
