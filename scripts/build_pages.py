@@ -391,7 +391,6 @@ def build_product(item, cat):
           <ul class="plain">
             <li>支付宝 / 微信</li>
             <li>USDT（Arbitrum One）</li>
-            <li>对公转账</li>
           </ul>
         </aside>
       </div>
